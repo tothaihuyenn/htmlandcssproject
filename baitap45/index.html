@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar in HTML and CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="input-box">
+      <i class="uil uil-search"></i>
+      <input type="text" placeholder="Search here...." />
+      <button class="button">Search</button>
+    </div>
+
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("mousedown", () =>
+        button.classList.add("clicked")
+      );
+      button.addEventListener("mouseup", () =>
+        button.classList.remove("clicked")
+      );
+    </script>
+  </body>
+</html>

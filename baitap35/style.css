@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 720px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 12px 12px 0;
+  clip-path: circle(65% at right 35%);
+  background: linear-gradient(135deg, #fd9bb0 10%, #f6416c 100%);
+}
+
+.container .box.one {
+  padding: 35px 5px 0 35px;
+}
+
+.box.one .details .topic {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.box.one .details p {
+  color: #737373;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.box.one .details .rating {
+  color: #fd9bb0;
+}
+
+.box.one .details .price-box {
+  margin-top: 16px;
+}
+
+.details .price-box .discount {
+  font-size: 20px;
+  color: #737373;
+  margin: 10px 0 0 12px;
+  position: relative;
+}
+
+.price-box .discount::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  background: #737373;
+  top: 50%;
+  left: -8px;
+}
+
+.details .price-box .price {
+  color: #fc6989;
+  font-size: 30px;
+}
+
+.details .button1 {
+  margin-top: 55px;
+}
+
+.box.one .button1 button {
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  background: #00e6e6;
+  transition: all 0.3s ease;
+}
+
+.box.one .button1 button:hover {
+  transform: scale(0.98);
+}
+
+.container .box.two .image-box {
+  position: relative;
+  text-align: right;
+  right: 0;
+  bottom: 32px;
+}
+
+.container .box.two .image {
+  height: 340px;
+  width: 430px;
+}
+
+.box.two .image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box.two .info {
+  margin: 0 35px 0 0;
+}
+
+.box.two .info .brand {
+  font-size: 17px;
+  font-weight: 600;
+  color: #c9032e;
+}
+
+.box.two .info .name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.box.two .info .button2 {
+  margin: 17px 0;
+}
+
+.box.two .info .button2 button {
+  outline: none;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #fff;
+}

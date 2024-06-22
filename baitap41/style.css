@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #fd79a8;
+}
+
+.wrapper {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .right {
+  background: #fff;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  z-index: 12;
+}
+
+.wrapper .right .logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.right .logo .stars {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.right .stars {
+  font-size: 18px;
+  color: #e84393;
+  margin-top: 8px;
+}
+
+.right .about p {
+  color: #8d8d8d;
+  font-size: 17px;
+}
+
+.right button {
+  background: #e84393;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.right h1 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 12px;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.left {
+  background: url("iphone15.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.left ul {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px 26px;
+  margin-left: -300px;
+}
+
+ul li {
+  font-size: 15px;
+  color: #fff;
+}
+
+.left:hover ul{
+    margin-left: 0px;
+}

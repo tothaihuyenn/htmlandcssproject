@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dad3f8;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  padding: 40px 50px 40px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .main-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .content .list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  margin-right: 50px;
+}
+
+.content .list label {
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 12px;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  color: #333;
+  z-index: 12;
+  transition: all 0.4s ease;
+}
+
+.content .list label:hover {
+  color: #6d50e2;
+}
+
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#about:checked ~ .list .about {
+  color: #fff;
+}
+
+.content .indicator {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #6d50e2;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+#home:checked ~ .list .indicator {
+  top: 0;
+}
+
+#blog:checked ~ .list .indicator {
+  top: 60px;
+}
+
+#help:checked ~ .list .indicator {
+  top: 120px;
+}
+
+#code:checked ~ .list .indicator {
+  top: 180px;
+}
+
+#about:checked ~ .list .indicator {
+  top: 240px;
+}
+
+.container input[type="radio"] {
+  display: none;
+}
+
+.container .content .text-content {
+  width: 80%;
+  height: 100%;
+}
+
+.content .text-content .text {
+  display: none;
+}
+
+.content .text-content .home {
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about {
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home {
+  display: none;
+}
+
+.content .text-content .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.content .text-content p {
+  text-align: justify;
+}

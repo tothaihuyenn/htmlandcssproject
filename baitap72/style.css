@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    136deg,
+    rgba(224, 195, 252) 0%,
+    rgba(142, 197, 252) 100%
+  );
+}
+
+.wrapper {
+  height: 400px;
+  width: 700px;
+  position: relative;
+}
+
+.wrapper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(0% at 0% 100%);
+  transition: all 0.7s;
+}
+
+.wrapper .img-1 img {
+  clip-path: circle(150% at 0 100%);
+}
+
+#one:checked ~ .img-1 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img {
+  clip-path: circle(150% at 0% 100%);
+}
+
+.wrapper .sliders {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+}
+
+.wrapper .sliders label {
+  height: 13px;
+  width: 13px;
+  border: 2px solid rgba(142, 197, 252);
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sliders label.one {
+  width: 35px;
+  border-radius: 14px;
+  background: rgba(142, 197, 252);
+}
+
+#two:checked ~ .sliders label.one,
+#three:checked ~ .sliders label.one,
+#four:checked ~ .sliders label.one,
+#five:checked ~ .sliders label.one {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four,
+#five:checked ~ .sliders label.five {
+  width: 35px;
+  border-radius: 14px;
+  background: rgba(142, 197, 252);
+}
+
+.wrapper input[type="radio"] {
+  display: none;
+}
+
+.sliders label:hover {
+  background: rgba(142, 197, 252);
+}

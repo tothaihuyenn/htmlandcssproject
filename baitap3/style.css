@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e3f2fd;
+}
+
+.container {
+    position: relative;
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1)
+}
+
+header, .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .chip {
+    width: 60px;
+}
+
+h6 {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5.number {
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.container .card-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

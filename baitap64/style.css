@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: #091921;
+}
+
+.icons li {
+  list-style: none;
+  display: inline-flex;
+  margin: 0 10px;
+  height: 70px;
+  width: 70px;
+  background: #091921;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.icons li.active::before {
+  position: absolute;
+  content: "";
+  height: 55px;
+  width: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #091921;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.icons li a {
+  color: #b6bbc5;
+  font-size: 27px;
+  width: 100%;
+  line-height: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.icons li.active a {
+  color: cyan;
+  font-size: 25px;
+}
